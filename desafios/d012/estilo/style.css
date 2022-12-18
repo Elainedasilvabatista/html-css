@@ -57,7 +57,10 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 2em;
+ }
 
+section > p {
+   padding-bottom: 2em;
 }
 
 section.normal {
@@ -71,11 +74,23 @@ section.imagem {
     color: white;
 }
 
-section.imagem>p {
+section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.377);
 
 }
+
+section#img01{
+    background-image: url(../imagens/background001.jpg
+
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg)
+
+}
+
+
 
 footer {
     background-color: black;
