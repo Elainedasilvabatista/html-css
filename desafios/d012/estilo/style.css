@@ -1,69 +1,92 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-    html, body{
-    min-height:100%vh;
-    background-color: darkgray;
-}
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-  header{
-  background-color:black;
-  color: white;
-  text-align: center;
-}
-
- header > h1{
-    padding-top: 50px;
-    font-variant: small-caps;
-}
-
-  header > p{
-   padding-bottom: 50px;
-}
-
-  header a, footer a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
- header a:hover, footer a:hover{
-    text-decoration: underline;
-}
-
-section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-
+:root {
+     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+     --fonte2: 'Passion One', cursive;
+     --fonte3:'Sriracha', cursiva;
 }  
 
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
 
-  section.normal{
-   background-color: white;
-   color: black;
+html,
+body {
+  min-height: 100%vh;
+  background-color: darkgray;
+  font-family: var(--fonte1);
+
+ 
+}
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--fonte2);
+  font-size: 10vw;
+
   }
 
-  section.imagem{
-    background-color: rgba(51, 51, 51 );
-    color: white;
-  }
+header > p {
+  padding-bottom: 50px;
+}
 
-  section.imagem > p{
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.253);
-  }
+header a,
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+ font-family: var(--fonte3);
+ font-size: 3.5vw;
+
+}
 
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: rgba(51, 51, 51);
+  color: white;
+}
+
+section.imagem > p {
+  display:inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.253);
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 
 }
